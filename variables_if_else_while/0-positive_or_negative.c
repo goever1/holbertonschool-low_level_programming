@@ -2,10 +2,11 @@
 #include <stdio.h>
 #include <time.h>
 /**
- * main - Shows if the nombre es positive, negative, or zero
+ * main - Entry point. Determines if a random number is positive, negative, or zero
  *
- * return: Always 0 (Success)
+ * Return: Always 0 (Success)
  */
+
 int main(void)
 {
 	int n;
