@@ -2,7 +2,8 @@
 #include <stdio.h>
 #include <time.h>
 /**
- * main - shows if the nombre es positive, negative, or zero
+ * main - Shows if the nombre es positive, negative, or zero
+ *
  * return: Always 0
  */
 int main(void)
