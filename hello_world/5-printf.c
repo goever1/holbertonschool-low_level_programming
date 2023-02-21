@@ -1,7 +1,9 @@
 #include<stdio.h>
 
 /**
- * main: - Entry point
+ * main - Entry point
+ *
+ * Description: Prints a specific string to the console
  *
  * Return: Always 0 (Success)
  */
