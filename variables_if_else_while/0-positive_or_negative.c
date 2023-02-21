@@ -2,9 +2,8 @@
 #include <stdio.h>
 #include <time.h>
 /**
- * main - random number
- * description : shows if the nombre es positive, negative, or zero
- * return: 0
+ * main - shows if the nombre es positive, negative, or zero
+ * return: Always 0
  */
 int main(void)
 {
