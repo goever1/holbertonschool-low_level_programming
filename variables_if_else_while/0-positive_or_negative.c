@@ -2,7 +2,8 @@
 #include <stdio.h>
 #include <time.h>
 /**
- * main - rnadom number
+ * main - random number
+ * description : shows if the nombre es positive, negative, or zero
  * return: 0
  */
 int main(void)
