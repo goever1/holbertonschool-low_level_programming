@@ -1,4 +1,5 @@
 #include "main.h"
+
 /**
  * _putchar - writes a character to stdout
  *
@@ -9,6 +10,12 @@
 int _putchar(char c);
 
 void print_alphabet(void);
+
+int main(void)
+{
+	print_alphabet();
+	retunr (0);
+}
 /**
  * print_alphabet - Prints the alphabet in lowercase
  */
