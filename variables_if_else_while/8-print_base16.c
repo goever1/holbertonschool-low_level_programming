@@ -11,8 +11,8 @@ int main(void)
 	char l;
 
 	for (n = 0; n <= 9; n++)
-		for (l = 'a'; l <= 'f'; l++)
-			putchar((n + '0'));
+		putchar((n + '0'));
+	for (l = 'a'; l <= 'f'; l++)
 	putchar(l);
 	putchar('\n');
 	return (0);
