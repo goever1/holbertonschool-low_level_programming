@@ -8,21 +8,15 @@
  */
 int _putchar(char c);
 /**
- * main - Entry point
- *
- * Description: The function prints the characters "_putchar" and a newline
- *
- * Return: Always 0 (Success)
- *         or a non-zero value on error
+ * print_alphabet - Prints the alphabet in lowercase
  */
 void print_alphabet(void)
 {
-	char l = 97;
-	while (l < 123)
+	char l = 'a';
+	while (l <= 'z')
 	{
 		_putchar(l);
 		l++;
 	}
 	_putchar('\n');
-	return (0);
 }
