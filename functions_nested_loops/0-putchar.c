@@ -1,29 +1,12 @@
 #include "main.h"
+
 /**
- * _putchar - writes a character to stdout
+ * main - check the code
  *
- * @c: the character to print
- *
- * Return: on success, returns the character written as a char
- */
-int _putchar(char c);
-/**
- * main - Entry point
- *
- * Description: The function prints the characters "_putchar" and a newline
- *
- * Return: Always 0 (Success)
- *         or a non-zero value on error
+ * Return: Always return 0.
  */
 int main(void)
 {
-	char *co = "_putchar";
-
-	while (*co)
-	{
-		_putchar(*co);
-	co++;
-	}
-	_putchar('\n');
-	return (0);
+    print_alphabet();
+    return (0);
 }
