@@ -8,14 +8,10 @@ int main(void)
 {
 	char l = 'a';
 
-	while (l <= 'z')
+	for (l = 'a'; l <= 'z'; l++)
 	{
-		if (l == 'q' || l == 'e')
-			l++;
-		else
-			l--;
-		putchar(l);
-		l++;
+		if (l != 'q' && l != 'e')
+			putchar(l);
 	}
 	putchar('\n');
 	return (0);
