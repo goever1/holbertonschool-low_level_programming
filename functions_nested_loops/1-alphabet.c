@@ -1,14 +1,28 @@
 #include "main.h"
 /**
- * main - Prints the alphabet in lowercase.
+ * _putchar - writes a character to stdout
+ *
+ * @c: the character to print
+ *
+ * Return: on success, returns the character written as a char
  */
-void print_alphabet(void)
+int _putchar(char c);
+/**
+ * main - Entry point
+ *
+ * Description: The function prints the characters "_putchar" and a newline
+ *
+ * Return: Always 0 (Success)
+ *         or a non-zero value on error
+ */
+int main(void)
 {
-	int l;
-
-	for(l = 'a'; l <= 'z'; l++)
+	char *co = 97;
+	while (*co < 123)
 	{
-		_putchar(l);
+		_putchar(*co);
+		co++;
 	}
 	_putchar('\n');
+
 }
