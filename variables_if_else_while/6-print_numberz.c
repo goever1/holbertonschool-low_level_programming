@@ -1,4 +1,4 @@
-#inlcude <stdio.h>
+#include <stdio.h>
 /**
  * main - Prints all the numbers form 0 to 9
  *
@@ -10,6 +10,6 @@ int main(void)
 
 	for (n = 0; n <= 9; n++)
 		putchar(n);
-	putchar("\n");
+	putchar('\n');
 	return (0);
 }
