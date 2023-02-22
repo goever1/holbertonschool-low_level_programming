@@ -12,11 +12,11 @@ int _putchar(int c);
  *
  * Return: on success, returns the alphabet
  */
-void print_alphabet(void)
+void print_alphabet(void);
 {
 	int l = 97;
 
-	while  (; l <= 122; l++)
+	for (; l <= 122; l++)
 		_putchar(l);
 	_putchar('\n');
 }
