@@ -10,7 +10,7 @@ int _putchar(char c);
 /**
  * main - Entry point
  *
- * Description: This function prints the characters "_putchar" followed by a newline
+ * Description: The function prints the characters "_putchar" and a newline
  *
  * Return: Always 0 (Success)
  *         or a non-zero value on error
