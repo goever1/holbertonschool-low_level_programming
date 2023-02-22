@@ -11,8 +11,8 @@ int main(void)
 	for (n = 0; n <= 9; n++)
 	{
 		putchar((n + '0'));
-	if (n < '8')
-	putchar(',');
+	if (n <= '8')
+		putchar(',');
 	putchar(' ');
 	}
 	putchar('\n');
