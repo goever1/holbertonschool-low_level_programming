@@ -1,7 +1,6 @@
 #include "main.h"
 /**
- *
- * Return: Always 0 (Success)
+ * print:alphabet - Prints the alphabet follow by a new line
  */
 void print_alphabet(void)
 {
