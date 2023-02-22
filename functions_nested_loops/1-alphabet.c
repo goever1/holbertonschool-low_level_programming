@@ -15,14 +15,14 @@ int _putchar(char c);
  * Return: Always 0 (Success)
  *         or a non-zero value on error
  */
-int main(void)
+void print_alphabet(void)
 {
-	char *co = 97;
-	while (*co < 123)
+	char l = 97;
+	while (l < 123)
 	{
-		_putchar(*co);
-		co++;
+		_putchar(l);
+		l++;
 	}
 	_putchar('\n');
-
+	return (0);
 }
