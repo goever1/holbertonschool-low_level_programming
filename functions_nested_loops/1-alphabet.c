@@ -4,15 +4,19 @@
  *
  * @c: the character to print
  *
- *Return: on success, returns the a character
+ *Return: on success, returns 0
  */
 int _putchar(int c);
+{
+	print_alphabet();
+	return (0);
+}
 /**
  * print_alphabet - Prints the alphabet in lowcase, follow by a new line
  *
  * Return: on success, returns the alphabet
  */
-void print_alphabet(void);
+void print_alphabet(void)
 {
 	int l = 97;
 
