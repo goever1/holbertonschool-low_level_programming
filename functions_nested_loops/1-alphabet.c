@@ -7,6 +7,8 @@
  * Return: on success, returns the character written as a char
  */
 int _putchar(char c);
+
+void print_alphabet(void);
 /**
  * print_alphabet - Prints the alphabet in lowercase
  */
