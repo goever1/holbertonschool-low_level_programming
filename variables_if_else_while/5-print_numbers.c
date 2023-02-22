@@ -9,6 +9,7 @@ int main(void)
 	char n=0;
 	
 	for (n = 0; n <= 9; n++)
-	printf("%d", n, '\n');
+	printf("%d", n);
+	prints('\n');
 	return (0);
 }
