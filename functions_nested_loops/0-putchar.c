@@ -8,9 +8,7 @@
  */
 int _putchar(char c);
 /**
- * main - entry point
- *
- * Description: This function prints the characters "_putchar"
+ * main - Entry point, This function prints the characters "_putchar"
  *
  * Returns: Always 0 (Success)
  */
