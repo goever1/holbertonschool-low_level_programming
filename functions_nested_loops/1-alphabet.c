@@ -18,9 +18,9 @@ int _putchar(int c);
  */
 void print_alphabet(void)
 {
-	int l = 97;
+	int l;
 
-	for (; l <= 122; l++)
+	for (l = 97 ; l <= 122; l++)
 		_putchar(l);
 	_putchar('\n');
 }
