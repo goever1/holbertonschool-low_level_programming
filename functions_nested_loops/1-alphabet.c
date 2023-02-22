@@ -11,9 +11,18 @@ int _putchar(char c);
 
 void print_alphabet(void);
 
+/**
+ * main - Entry point
+ *
+ * Description: The function calls print_alphabet()
+ *
+ * Return: Always 0 (Success)
+ *         or a non-zero value on error
+ */
+
 int main(void)
 {
-	int print_alphabet();
+	print_alphabet();
 	return (0);
 }
 /**
