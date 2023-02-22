@@ -1,26 +1,12 @@
 #include "main.h"
+#include "main.h"
 /**
- * _putchar - It's calling the function before using it
- *
- * @c: the character to print
- *
- *Return: on success, returns 0
- */
-int _putchar(int c)
-{
-	int print_alphabet();
-	return (0);
-}
-/**
- * print_alphabet - Prints the alphabet in lowcase, follow by a new line
- *
- * Return: on success, returns the alphabet
+ * main - Prints the alphabet in lowercase.
  */
 void print_alphabet(void)
 {
-	int l;
-
-	for (l = 97 ; l <= 122; l++)
-		_putchar(l);
+	char letter;
+	for(letter = 'a'; letter <= 'z'; letter++)
+		_putchar(letter);
 	_putchar('\n');
 }
