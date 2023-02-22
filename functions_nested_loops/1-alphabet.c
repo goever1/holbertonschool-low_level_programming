@@ -6,9 +6,9 @@
  *
  *Return: on success, returns 0
  */
-int _putchar(int c);
+int _putchar(int c)
 {
-	print_alphabet();
+	int print_alphabet();
 	return (0);
 }
 /**
