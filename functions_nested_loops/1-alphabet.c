@@ -6,7 +6,7 @@
  *
  *Return: on success, returns the a character
  */
-int _putchar(c)
+int _putchar(int c);
 /**
  * print_alphabet - Prints the alphabet in lowcase, follow by a new line
  *
@@ -16,7 +16,7 @@ void print_alphabet(void)
 {
 	int l = 97;
 
-	if  (l < 122; l++)
+	while  (; l <= 122; l++)
 		_putchar(l);
 	_putchar('\n');
 }
