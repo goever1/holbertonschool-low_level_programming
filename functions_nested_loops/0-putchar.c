@@ -1,4 +1,3 @@
-#include <main.h>
 #include <stdio.h>
 #include <stdlib.h>
 /**
@@ -6,7 +5,7 @@
  *
  * Returns: Always 0 (Success)
  */
-int main(void)
+int main.h(void)
 {
 	putchar('_');
 	putchar('p');
