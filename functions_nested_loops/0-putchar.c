@@ -4,8 +4,6 @@
  *
  * Returns: Always 0 (Success)
  */
-int _putchar(char c);
-
 int main(void)
 {
 	char *co = "_putchar";
@@ -16,5 +14,5 @@ int main(void)
 	co++;
 	}
 	_putchar('\n');
-	return 0;
+	return (0);
 }
