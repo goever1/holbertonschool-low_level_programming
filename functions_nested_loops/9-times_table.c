@@ -10,7 +10,7 @@ void times_table(void)
 			r = n1 * n2;
 			if(r < 10)
 			{
-				_putchar('0');
+				_putchar(r + 0');
 			}
 			else
 			{
