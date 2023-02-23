@@ -14,7 +14,6 @@ void print_to_98(int n)
 			}
 			else
 			{
-				_putchar('-');
 				n--;
 			}
 		}
@@ -22,16 +21,15 @@ void print_to_98(int n)
 		{
 			n--;
 		}
-		if (n == 98)
-		{
-			_putchar(abs(n));
-		}
 		else
 		{
-			_putchar(abs(n));
+			printf("%d", n);
 			_putchar(',');
 			_putchar(' ');
 		}
 	}
-
+	if (n == 98)
+	{
+		printf("%d", n);
+	}
 }
