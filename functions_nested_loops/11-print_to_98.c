@@ -14,7 +14,7 @@ void print_to_98(int n)
 			}
 			else
 			{
-				_putchat('-');
+				_putchar('-');
 				n--;
 			}
 		}
