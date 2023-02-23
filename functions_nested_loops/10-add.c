@@ -14,5 +14,7 @@ int add(int n1, int n2)
 		 _putchar((r / 10) + '0');
 		 _putchar((r % 10) + '0');
 	 }
-	 -putchar('\n');
+	 
+	 
+	 _putchar('\n');
 }
