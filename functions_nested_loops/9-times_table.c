@@ -20,7 +20,7 @@ void times_table(void)
 			{
 				_putchar(' ');
 				_putchar(' ');
-				lem = 2;
+				len = 2;
 			}
 			else if (r < 100)
 			{
