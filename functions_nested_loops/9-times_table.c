@@ -31,5 +31,4 @@ void times_table(void)
 		if (n1 < 9)
 		_putchar('\n');
 	}
-	_putchar('\n');
 }
