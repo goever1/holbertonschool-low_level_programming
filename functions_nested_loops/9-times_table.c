@@ -5,12 +5,14 @@ void times_table(void)
 
 	for (n1 = 0; n1 <= 9; n1++)
 	{
+		_putchar('0');
+		_putchar(',');
+		_putchar(' ');
 		for (n2 = 0; n2 <= 9; n2++)
 		{
 			r = n1 * n2;
 			if(r < 10)
 			{
-				_putchar(' ');
 				_putchar(r + '0');
 			}
 			else
