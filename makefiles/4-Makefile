@@ -3,7 +3,7 @@ SRC = main.c school.c
 OBJ = $(SRC: .C = .O)
 NAME= school
 RM = rm -f
-CFLAGS = 4-Makefile
+CFLAGS = -Wall -Werror -Wextra -pedantic
 
 all:
 	$(CC) $(SRC) -o $(NAME)
