@@ -8,6 +8,6 @@ void puts2(char *str)
 	int i = l, z = 0;
 
 	for (; z < i; z += 2)
-		printf("%c", str[i]);
+		printf("%c", str[z]);
 	printf("\n");
 }
