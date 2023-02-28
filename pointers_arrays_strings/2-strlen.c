@@ -2,10 +2,8 @@
 #include <string.h>
 #include <stdio.h>
 /**
- * _strlen - It returns the length of the string in *s
+ * _strlen - Returns the length of the string in `s`
  * @s: is the location of the string
- *
- * @l: is the variable to hold the output of strlen
  *
  * return: it will retunr the length of the string
  */
