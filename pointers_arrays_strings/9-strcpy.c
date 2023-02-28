@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stdio.h>
+#include <string.h>
 /**
  * *_strcpy - It copies the string of "src" and paste it to "dest"
  * @dest: the destination of the copy
