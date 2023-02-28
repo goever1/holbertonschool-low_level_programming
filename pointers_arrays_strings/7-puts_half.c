@@ -2,7 +2,7 @@
 #include <string.h>
 #include <stdio.h>
 /**
- * puts_half - It prints the 2 half of the string if odd i = (l - 1) / 2 
+ * puts_half - It prints the 2 half of the string if odd i=(l-1)/2
  * @str: points the string
  */
 void puts_half(char *str)
@@ -23,5 +23,6 @@ void puts_half(char *str)
 		for (; i < l; ++i)
 			printf("%c", str[i]);
 	}
+	printf("\n");
 }
 
