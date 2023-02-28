@@ -3,9 +3,9 @@
 #include <stdio.h>
 /**
  * _strlen - Returns the length of the string in `s`
- * @s: is the location of the string
+ * @s: Pointer to the string to be measured
  *
- * return: it will retunr the length of the string
+ * Return: The length of the string
  */
 int _strlen(char *s)
 {
