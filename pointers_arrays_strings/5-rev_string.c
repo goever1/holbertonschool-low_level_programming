@@ -7,17 +7,16 @@
  */
 void rev_string(char *s)
 {
-	int i = strlen(s);
+	int l = strlen(s);
+
+	char *reversed = (char*) malloc((l + 1) * sizeof(char));
 
 	int z = 0;
 	
-	char riversed[i + 1];
-	
-	for (;i < 0; --i)
-	{
-		rivers[z] = s[i - 1];
-		++z;
-	}
+	for (i = l - 1; i >= 0; i--, z++)
+	       reversed[z] = s[i - 1];
+
 	rivers[z] = '\0';
 	strcpy(s, rivers);
+	free(reversed);
 }
