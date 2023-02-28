@@ -16,10 +16,10 @@ void rev_string(char *s)
 	
 	for (; i >= 0; i--)
 	{
-	       reversed[z] = s[i - 1];
+	       revers[z] = s[i - 1];
 	       z++;
 	}
-	rivers[z] = '\0';
-	strcpy(s, rivers);
+	revers[z] = '\0';
+	strcpy(s, revers);
 	free(revers);
 }
