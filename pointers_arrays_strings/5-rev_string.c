@@ -10,9 +10,9 @@ void rev_string(char *s)
 {
 	int l = strlen(s);
 
-	char *reversed = (char*) malloc((l + 1) * sizeof(char));
+	char *revers = (char*) malloc((l + 1) * sizeof(char));
 
-	int z = 0; i = l - 1
+	int z = 0, i = l - 1;
 	
 	for (; i >= 0; i--)
 	{
@@ -21,5 +21,5 @@ void rev_string(char *s)
 	}
 	rivers[z] = '\0';
 	strcpy(s, rivers);
-	free(reversed);
+	free(revers);
 }
