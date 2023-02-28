@@ -10,16 +10,16 @@ void rev_string(char *s)
 {
 	int l = strlen(s);
 
-	char *revers = (char*) malloc((l + 1) * sizeof(char));
+	char rev = s[0]
 
 	int z = 0, i = l - 1;
 	
 	for (; i >= 0; i--)
 	{
-	       revers[z] = s[i - 1];
-	       z++;
+	       rev = s[z];
+	       s[z] = s[i];
+	       s[i] = rev;
+	       z++
 	}
 	revers[z] = '\0';
-	strcpy(s, revers);
-	free(revers);
 }
