@@ -11,7 +11,7 @@ void puts_half(char *str)
 
 	int i = 0, l = s;
 
-	if ((l % 2) = 0)
+	if ((l % 2) == 0)
 	{
 		i = l / 2;
 		for (; i < l; ++i)
