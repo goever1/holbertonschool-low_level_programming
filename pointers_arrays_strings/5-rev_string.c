@@ -11,9 +11,9 @@ void rev_string(char *s)
 
 	int z = 0;
 	
-	char rivers[i + 1];
+	char rivers[i];
 	
-	for (;i ! < 0; --i)
+	for (;i < 0; --i)
 	{
 		rivers[z] = s[i - 1];
 		++z;
