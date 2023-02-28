@@ -8,12 +8,12 @@
  */
 void print_array(int *a, int n)
 {
-	size_t n1 = strlen(a);
-
-	n = n1;
 	int i = 0;
 
-	for (;i == n + 1; ++i)
+	for (;i < n + 1; ++i)
+	{
 		printf("%d", a[i]);
+		printf(", ");
+	}
+	printf("\n");
 }
-
