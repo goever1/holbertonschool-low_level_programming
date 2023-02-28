@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * swap_in - It isswaping the values of a and b
+ * swap_int - It isswaping the values of a and b
  * @a: firt integrer
  * @b: second integer
  */
