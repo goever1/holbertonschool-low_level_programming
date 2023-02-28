@@ -1,5 +1,5 @@
 #include "main.h"
-#include <string.g>
+#include <string.h>
 #include <stdio.h>
 void puts2(char *str)
 {
