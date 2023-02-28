@@ -11,7 +11,7 @@ void rev_string(char *s)
 
 	int z = 0;
 	
-	char rivers[i];
+	char riversed[i + 1];
 	
 	for (;i < 0; --i)
 	{
