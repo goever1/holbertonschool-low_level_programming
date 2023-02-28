@@ -4,7 +4,10 @@
 /**
  * _strlen - It returns the length of the string in *s
  * @s: is the location of the string
+ *
  * @l: is the variable to hold the output of strlen
+ *
+ * return: it will retunr the length of the string
  */
 int _strlen(char *s)
 {
