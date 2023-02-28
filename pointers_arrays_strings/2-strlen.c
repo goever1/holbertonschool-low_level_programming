@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 /**
  * _strlen - It returns the length of the string in *s
  * @s: is the location of the string
@@ -6,6 +7,6 @@
  */
 int _strlen(char *s)
 {
-	int l = strlen(*s);
-	return (l);
+	size_t l = strlen(s);
+	return (int)l;
 }
