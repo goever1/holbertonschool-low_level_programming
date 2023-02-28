@@ -5,9 +5,9 @@ void puts2(char *str)
 {
 	size_t l = strlen(str);
 
-	int i = l;
+	int i = l, z = 0;
 
-	for (; i < l; i += 2)
+	for (; z < i; z += 2)
 		printf("%c", str[i]);
 	printf("\n");
 }
