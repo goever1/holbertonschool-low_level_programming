@@ -12,14 +12,17 @@ char *_strncat(char *dest, char *src, int n)
 {
 	size_t l1 = strlen(dest);
 
-	int ld = l1, i = 0, r = (ld + n);
+	int ld = l1, i = 0, r = (ld + n), a_size = ((&dest)[1] - str);
 	
 	for (; ld < r; ++ld)
-		if (ld + i >= n - 1)
-			break;
 	{
-		dest[ld] = src[i];
-		++i;
+		if (a_size < n)
+			break;
+		else
+		{
+			dest[ld] = src[i];
+			++i;
+		}
 	}
 	return (dest);
 }
