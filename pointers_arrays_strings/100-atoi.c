@@ -11,16 +11,15 @@ int _atoi(char *s)
 {
 	int i = 0, sign = 1, r = 0;
 	
-	if (*s == '-')
-	{
-		sign *= -1;
-		i++;
-	}
 	for (; s[i] != '\0'; ++i)
 	{
-		if (s[i] >= '0' && s[i] < '9')
+		if (s[i] == '-')
+			r = -1;
+		else
+			r = 1
+		if (s[i] > 48 && s[i] < 57)
 			r = r * 10 + (s[i] - '0');
-		else (r > '0')
+		else
 			break;
 	}
 	return(sign * r);
