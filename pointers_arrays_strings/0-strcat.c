@@ -10,9 +10,9 @@
  */
 char *_strcat(char *dest, char *src)
 {
-	size_t l1 = strlen(dest), l2 = strlen(src)
+	size_t l1 = strlen(dest), l2 = strlen(src);
 
-	int ld = l1, i = 0, ls = l2, r = (ls + ld)
+	int ld = l1, i = 0, ls = l2, r = (ls + ld);
 	
 	ld = (' ');
 	for(; ld + 1 < r; ++ld)
