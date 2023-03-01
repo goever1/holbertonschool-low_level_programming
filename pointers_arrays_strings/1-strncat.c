@@ -12,9 +12,11 @@ char *_strncat(char *dest, char *src, int n)
 {
 	size_t l1 = strlen(dest);
 
-	int ld = l1, i = 0, r = (ld + n);
-
-	if (ld < n)
+	int ld = l1, i = 0, r = (ld + n), count = 0
+	
+	while (dest[count] != -1)
+		++count;
+	if (count < n)
 	{
 		dest[ld] = '\0';
 		return (dest);
