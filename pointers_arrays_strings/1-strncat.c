@@ -12,9 +12,9 @@ char *_strncat(char *dest, char *src, int n)
 {
 	size_t l1 = strlen(dest);
 
-	int ld = l1, i = 0;
+	int ld = l1, i = 0, r = (ld + n)
 
-	for (; ld < n; ++ld)
+	for (; ld < r; ++ld)
 	{
 		dest[ld] = src[i];
 		++i;
