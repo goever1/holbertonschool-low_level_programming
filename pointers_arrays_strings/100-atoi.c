@@ -18,7 +18,7 @@ int _atoi(char *s)
 		else if (s[i] == '-')
 			sign = -1;
 		else
-			r = '0'
+			r = '0';
 	}
 	return(sign * r);
 }
