@@ -1,6 +1,6 @@
 #include "main.h"
 #include <stdio.h>
-#include <string.h>
+#include <ctype.h>
 /**
  * _atoi - Change the string to the number that the string contains
  * @s: It is poiting the string
@@ -17,8 +17,12 @@ int _atoi(char *s)
 	{
 		if (s[i] >= '0' && s[i] <= '9')
 			r = r * 10 + (s[i] - '0');
-		else if (s[i] == '-')
-			sign = -1;
+		if (s[i] == '-')
+			sign = sign * -1;
+		else if (s[i] == '+')
+			sign = sign * 1;
+		if (r != 0 && isalpha(s[i]))
+				break;
 	}
 	return (sign * r);
 }
