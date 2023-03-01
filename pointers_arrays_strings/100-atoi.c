@@ -14,9 +14,9 @@ int _atoi(char *s)
 	for (; s[i] != '\0'; ++i)
 	{
 		if (s[i] == '-')
-			r = -1;
+			sign = -1;
 		else
-			r = 1;
+			sign = 1;
 		if (s[i] > 48 && s[i] < 57)
 			r = r * 10 + (s[i] - '0');
 		else
