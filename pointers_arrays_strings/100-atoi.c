@@ -22,7 +22,7 @@ int _atoi(char *s)
 		else if (s[i] == '+')
 			sign = sign * 1;
 		if (r != 0 && isalpha(s[i]))
-				break;
+			break;
 	}
 	return (sign * r);
 }
