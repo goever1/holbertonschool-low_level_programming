@@ -19,6 +19,5 @@ char *_strncat(char *dest, char *src, int n)
 		dest[ld] = src[i];
 		++i;
 	}
-	dest[n] = '\0';
 	return (dest);
 }
