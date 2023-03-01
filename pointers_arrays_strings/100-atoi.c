@@ -4,10 +4,11 @@
 /**
  * _atoi - Change the string to the number that the string contains
  * @s: It is poiting the string
+ *
+ * return: the number in the string
  */
 int _atoi(char *s)
 {
 	int n = atoi(s);
-	printf("%d", n);
-	return (0);
+	return (printf("%d", n));
 }
