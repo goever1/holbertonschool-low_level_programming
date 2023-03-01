@@ -9,6 +9,6 @@
  */
 int _atoi(char *s)
 {
-	int n = atoi(s);
-	return (printf("%d", n));
+	int val = atoi(s);
+	prrintf"%d", val);
 }
