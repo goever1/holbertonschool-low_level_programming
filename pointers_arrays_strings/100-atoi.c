@@ -9,7 +9,9 @@
  */
 int _atoi(char *s)
 {
-	int i = 0, sign = 1, r = 0;
+	int i = 0, sign = 1;
+	
+	long r = 0;
 	
 	for (; s[i] != '\0'; ++i)
 	{
@@ -17,8 +19,6 @@ int _atoi(char *s)
 			r = r * 10 + (s[i] - '0');
 		else if (s[i] == '-')
 			sign = -1;
-		else
-			r = 0;
 	}
 	return (sign * r);
 }
