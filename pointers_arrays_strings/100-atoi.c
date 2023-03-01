@@ -1,6 +1,6 @@
 #include "main.h"
 #include <stdio.h>
-#include <stdlib.h>
+#include <string.h>
 /**
  * _atoi - Change the string to the number that the string contains
  * @s: It is poiting the string
@@ -11,7 +11,7 @@ int _atoi(char *s)
 {
 	size_t l1 = strlen(s);
 
-	int l = l1; i = 0, sign = 1, r = 0
+	int l = l1, i = 0, sign = 1, r = 0;
 
 	if (s[0] == '-')
 	{
