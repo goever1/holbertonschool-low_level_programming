@@ -8,5 +8,6 @@
 int _atoi(char *s)
 {
 	int n = atoi(s);
+	printf("%d", n);
 	return (0);
 }
