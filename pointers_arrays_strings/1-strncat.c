@@ -13,7 +13,6 @@ char *_strncat(char *dest, char *src, int n)
 	size_t l1 = strlen(dest);
 
 	int ld = l1, i = 0, r = (ld + n), a_size = (*(&dest + 1) - dest);
-	
 	for (; ld < r; ++ld)
 	{
 		if (a_size < n)
