@@ -10,5 +10,6 @@
 int _atoi(char *s)
 {
 	int val = atoi(s);
-	prrintf"%d", val);
+
+	return(printf("%d", val));
 }
