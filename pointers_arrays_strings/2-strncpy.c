@@ -1,16 +1,21 @@
 #include "main.h"
 #include <string.h>
+/**
+ * *_strncpy - concatenates the text adding null character
+ * @dest: destination
+ * @src: source
+ *
+ * Retunr: The string cancatenated
+ */
 char *_strncpy(char *dest, char *src, int n)
 {
-	size_t l1 = strlen(dest);
-
-	int l = l1, i = 0, z = 0, srca = (*(&src + 1) - src);
+	int i = 0, z = 0, deca = (*(&dest + 1) - dest);
 	
-	for (; l < n; ++l)
+	for (; i <= deca; ++i)
 		{
-			dest[l] = *(src + i);
-			++i;
-			if (n > srca)
+			if (n > i)
+				dest[i] = *(src + i);
+			else
 			{
 				dest[z] = '\0';
 				++z;
