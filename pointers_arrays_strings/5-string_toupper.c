@@ -3,11 +3,11 @@
  * *string_toupper - change the string to uppercase
  * @*: is the input
  */
-char *string_toupper(char *)
+char *string_toupper(char *n)
 {
-	while (* != '\0')
+	while (*n != '\0')
 	{
-	* = * - ('a' - 'A');
-	*++;
+	*n = *n - ('a' - 'A');
+	n++;
 	}
 }
