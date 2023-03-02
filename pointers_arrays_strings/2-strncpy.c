@@ -16,8 +16,6 @@ char *_strncpy(char *dest, char *src, int n)
 	{
 		if (n >= i)
 			dest[i] = src[i];
-		else if (i == deca)
-			dest[deca] = '\n';
 	}
 	return (dest);
 }
