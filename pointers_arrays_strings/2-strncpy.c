@@ -10,10 +10,12 @@ char *_strncpy(char *dest, char *src, int n)
 		{
 			dest[l] = *(src + i);
 			++i;
-	if (n > srca)
-	{
-		dest[z] = '\0';
-		++z
-	}
+			if (n > srca)
+			{
+				dest[z] = '\0';
+				++z;
+			}
+		}
+	
 	return (dest);
 }
