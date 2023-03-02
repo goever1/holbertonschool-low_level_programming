@@ -10,4 +10,5 @@ char *string_toupper(char *n)
 	*n = *n - ('a' - 'A');
 	n++;
 	}
+	return (n);
 }
