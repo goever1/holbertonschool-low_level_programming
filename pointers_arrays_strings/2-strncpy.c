@@ -9,17 +9,12 @@
  */
 char *_strncpy(char *dest, char *src, int n)
 {
-	int i = 0, z = 0, deca = (*(&dest + 1) - dest);
+	int i = 0, deca = (*(&dest + 1) - dest);
 	
 	for (; i <= deca; ++i)
 		{
-			if (n > i)
+			if (n >= i)
 				dest[i] = *(src + i);
-			else
-			{
-				dest[z] = '\0';
-				++z;
-			}
 		}
 	
 	return (dest);
