@@ -14,8 +14,9 @@ char *_strncpy(char *dest, char *src, int n)
 	
 	for (; i <= deca; ++i)
 	{
-		if (n >= i)
-			dest[i] = src[i];
+		dest[i] = src[i];
+		if (i > n)
+			break;
 	}
 	return (dest);
 }
