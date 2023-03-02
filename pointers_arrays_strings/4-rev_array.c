@@ -1,7 +1,7 @@
 #include "main.h"
 void reverse_array(int *a, int n)
 {
-	int i = 0; front = 0;
+	int i = 0, front = 0;
 
 	for (; i < n; ++i)
 	{
