@@ -3,15 +3,12 @@
 char *_strchr(char *s, char c)
 {
 	size_t l1 = strlen(s);
-	int i = 0, j = 0, l = l1, *p;
+	int i = 0, l = l1;
 
 	for (; i < l; ++i)
 		if (s[i] == c)
 		{
-			*p = s[i];
-			j++;
+			return &s[i]
 		}
-	if (j == 0)
-		p = '\0';
-	return (*p);
+	return (NULL);
 }
