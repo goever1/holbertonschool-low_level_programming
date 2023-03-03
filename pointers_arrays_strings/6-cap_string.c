@@ -18,7 +18,7 @@ char *cap_string(char *n)
 		cap = 0;
 		for (x = 0; x <= 6; x++)
 		{
-			if (n[i] == separators[x])
+			if (n[i] == separators[x] && n[i] == separators1[x])
 			{
 				x = 6;
 				cap = 32;
