@@ -1,7 +1,7 @@
 #include "main.h"
 char *leet(char *str)
 {
-	char cod = "4BCD3F6H1JKLMN0PQR57UVWXY2";
+	char *cod = "4BCD3F6H1JKLMN0PQR57UVWXY2";
 	int i = 0, j = 0;
 
 	for (; str[i] != '\0'; ++i)
