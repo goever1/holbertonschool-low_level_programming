@@ -8,7 +8,7 @@
  */
 unsigned int _strspn(char *s, char *accept)
 {
-	int i = 0, cont = 0, j = 0;
+	int i = 0, cont = 0, j = 0, stop = 0;
 
 	for (; s[i] != '\0'; ++i)
 	{
@@ -17,8 +17,12 @@ unsigned int _strspn(char *s, char *accept)
 			if (s[i] == accept[j])
 			{
 				cont++;
-				if (cont == 1)
+				stop++;
+				if (stop == 1)
+				{
 					j = 0;
+					stop = 0
+				}
 				else
 					break;
 			}
