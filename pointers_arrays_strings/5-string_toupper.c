@@ -3,6 +3,8 @@
 /**
  * *string_toupper - change the string to uppercase
  * @n: is the input
+ *
+ * Return: all letter in uppercase
  */
 char *string_toupper(char *n)
 {
