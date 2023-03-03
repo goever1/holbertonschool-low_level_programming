@@ -8,5 +8,5 @@ char *_strchr(char *s, char c)
 	for (; i < l; ++i)
 		if (s[i] == c)
 			return &s[i];
-	return (NULL);
+	return ('\0');
 }
