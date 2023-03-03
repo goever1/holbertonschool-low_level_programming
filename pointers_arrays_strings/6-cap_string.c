@@ -2,6 +2,8 @@
 /**
  * *cap_string - capitalizes all words of a string
  * @n: Is the input
+ *
+ * Return: It prints the string with all words capitalized
  */
 char *cap_string(char *n)
 {
@@ -12,4 +14,5 @@ char *cap_string(char *n)
 		if (n[i] - 1 == ' ' || n[i] == '\n')
 			n[i] = n[i] - 32;
 	}
+	return (n);
 }
