@@ -7,12 +7,22 @@
  */
 char *cap_string(char *n)
 {
-	int i = 0;
+	int i = 0, separators[] = {',', ';', '.', '?', '"','(', ')', '{', '}', ' ', '\n', '\t'}, cap = 0, x = 0;
 
 	for (; n[i] != '\0'; ++i)
 	{
-		if (n[i] - 1 == ' ' || n[i] == '\n')
-			n[i] = n[i] - 32;
+		if (n[i] >= 'a' && n[i] <= 'z')
+			n[i] = n[i] - cap;
+		cap = 0;
+		for (x = 0; x <= 12; x++)
+		{
+			if (n[i] == separators[x])
+			{
+				x = 12;
+				cap = 32;
+			}
+		}
+
 	}
 	return (n);
 }
