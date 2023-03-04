@@ -21,7 +21,7 @@ unsigned int _strspn(char *s, char *accept)
 				if (stop == 1)
 				{
 					j = 0;
-					stop = 0;
+					stop--;
 				}
 				else
 					break;
