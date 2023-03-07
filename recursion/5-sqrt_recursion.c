@@ -11,7 +11,7 @@ int sqr(int n, int i)
 	if ((i * i) == n)
 		return (i);
 	else if (i < n)
-		return (aux(n, i+ 1));
+		return (sqr(n, i+ 1));
 	return (-1);
 }
 /**
