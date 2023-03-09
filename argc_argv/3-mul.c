@@ -9,7 +9,6 @@
 int main(__attribute__((unused)) int argc, char *argv[])
 {
 	int n1 = 0, n2 = 0, r = 0;
-	
 	if (argc < 3)
 	{
 		printf("Error\n");
