@@ -5,7 +5,7 @@
  * @argv: an array of strings containing the command line arguments
  * Return: 0 when success
  */
-int arg_count(int argc, __attribute__((unused)) char *argv[])
+int main(int argc, __attribute__((unused)) char *argv[])
 {
 	int i = 0;
 
