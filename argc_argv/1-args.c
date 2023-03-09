@@ -9,9 +9,9 @@ int arg_count(int argc, char *argv[])
 {
 	int i = 0;
 
-	for (; argv[i] != '\0'; ++i)
+	for (; i < argc ; ++i)
 	{
 	}
-	printf("%d\n", i);
+	printf("%d\n", i - 1);
 	return 0;
 }
