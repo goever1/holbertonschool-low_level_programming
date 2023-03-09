@@ -12,7 +12,7 @@ int main(__attribute__((unused)) int argc, char *argv[])
 	
 	if (argc < 3)
 	{
-		printf("Error: two numbers are required\n");
+		printf("Error\n");
 		return (1);
 	}
 	n1 = atoi(argv[1]);
