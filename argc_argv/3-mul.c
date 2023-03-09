@@ -14,6 +14,6 @@ int main(__attribute__((unused)) int argc, char *argv[])
 		printf("%s\n", "Error");
 		return (1);
 	}
-	printf("%n\n", r);
+	printf("%d\n", r);
 	return (0);
 }
