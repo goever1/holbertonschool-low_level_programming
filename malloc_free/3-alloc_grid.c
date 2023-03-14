@@ -1,6 +1,6 @@
 #include "main.h"
 #include <stdio.h>
-#include <stdlin.h>
+#include <stdlib.h>
 /**
  * alloc_grid - it inizialice all grid positions with 0
  * @width: width input
