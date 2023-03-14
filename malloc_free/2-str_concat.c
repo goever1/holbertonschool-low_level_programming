@@ -13,7 +13,7 @@ char *str_concat(char *s1, char *s2)
 	char *po;
 	
 	if (s1 == NULL || s2 == NULL)
-		s1 = s2 = ""
+		s1 = s2 = "";
 	for (; s1[leng1] != '\0'; ++leng1)
 		po[leng1] = s1[leng1]
 	for (; s2[leng2] != '\0'; ++leng2)
@@ -22,7 +22,7 @@ char *str_concat(char *s1, char *s2)
 	po = malloc(sizeof(char) * (leng1 + leng2 + 1));
 	if (po == NULL)
 		return (NULL);
-	for (; leng2[i] != '\0'; ++i)
+	for (; s2[i] != '\0'; ++i)
 		po[leng1 + i] = s2[i];
 	po[leng1 + leng2] = '\0';
 	return (po);
