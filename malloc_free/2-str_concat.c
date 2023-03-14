@@ -7,7 +7,7 @@
  * @s2: string #2
  * Return: null if fail, two strings concatenated if success
  */
-char *str_concat(char *s1, char *s2);
+char *str_concat(char *s1, char *s2)
 {
 	int leng1 = 0, leng2 = 0, i = 0;
 	char *po;
