@@ -1,7 +1,6 @@
 #include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
-#include <string.h>
 /**
  * _calloc - allocates the memory for nmemb
  * @nmemb - input of array
@@ -10,13 +9,15 @@
  */
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-	 char *po;
-	 
-	 po = malloc(nmemb * size);
-	 if(nmemb == 0 || size == 0)
-		 return (NULL);
-	 if (po == NULL)
-		 return (NULL);
-	 memset (po, 0, nmemb * size);
+	int i = 0;
+	char *po;
+	
+	po = malloc(nmemb * size);
+	if(nmemb == 0 || size == 0)
+		return (NULL);
+	if (po == NULL)
+		return (NULL);
+	 for (; i < (nmemb * size); ++i)
+		 po[i] = 0;
 	 return (po);
 }
