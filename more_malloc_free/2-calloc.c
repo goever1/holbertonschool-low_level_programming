@@ -9,7 +9,7 @@
  */
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-	int i = 0;
+	unsigned int i = 0;
 	char *po;
 	
 	po = malloc(nmemb * size);
