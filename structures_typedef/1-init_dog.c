@@ -3,7 +3,8 @@
 #include <stdlib.h>
 /**
  * init_dog - it initializes a struct dog type variable
- * @struct dog d: Struct dog variable
+ * @struct dog: struct declaration
+ * @d: struct dog variable
  * @name: dog's name
  * @age: dog's age
  * @owner: dog's owner name
