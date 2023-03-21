@@ -2,7 +2,6 @@
 #include <stdio.h>
 /**
  * print_dog - it prints a struct dog
- * @struct dog: struct declaration
  * @d: struct variable
  * Return; NULL when fail
  */
