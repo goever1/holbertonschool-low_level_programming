@@ -6,7 +6,7 @@
  * @name: name
  * @age: age
  * @owner: owner
- * Return: NULL when fail
+ * Return: NULL when fail and free the memory
  */
 dog_t *new_dog(char *name, float age, char *owner)
 {
@@ -14,7 +14,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 	char *cp_name, *cp_owner;
 	int owner_len = 0, name_len = 0, i = 0;
 
-	if ( name == NULL || age <= 0 || owner == NULL)
+	if (name == NULL || age <= 0 || owner == NULL)
 		return (NULL);
 
 	new_name = malloc(sizeof(dog_t));
@@ -26,15 +26,16 @@ dog_t *new_dog(char *name, float age, char *owner)
 	for (; owner[owner_len] != '\0'; ++owner_len)
 		;
 
-	cp_name = malloc (sizeof(char) * (name_len + 1));
+	cp_name = malloc(sizeof(char) * (name_len + 1));
 	if (cp_name == NULL)
 	{
 		free(new_name);
 		return (NULL);
 	}
-	cp_owner = malloc (sizeof(char) * (owner_len + 1));
+	cp_owner = malloc(sizeof(char) * (owner_len + 1));
 	if (cp_owner == NULL)
 	{
+		free(cp_name)
 		free(new_name);
 		return (NULL);
 	}
