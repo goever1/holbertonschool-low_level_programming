@@ -4,6 +4,7 @@
  * print_dog - it prints a struct dog
  * struct dog: struct declaration
  * @d: struct variable
+ * Return; NULL when fail
  */
 void print_dog(struct dog *d)
 {
@@ -22,5 +23,5 @@ void print_dog(struct dog *d)
 		printf("Owner: %s\n", d->owner);
 	}
 	else
-		return (null)
+		return (NULL)
 }
