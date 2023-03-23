@@ -7,7 +7,7 @@
  * @cmp: pointer toi a the function to search
  * Return: -1 if fail, the integer if success
  */
-int int_index(int *array, int size, int (*cmp)(int));
+int int_index(int *array, int size, int (*cmp)(int))
 {
 	int i = 0;
 
