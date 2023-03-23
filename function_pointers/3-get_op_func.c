@@ -3,7 +3,7 @@
 /**
  * get_op_func - matchs operator from main
  * @s: op str
- * Return Null when fail
+ * Return: Null when fail
  */
 int (*get_op_func(char *s))(int, int)
 {
