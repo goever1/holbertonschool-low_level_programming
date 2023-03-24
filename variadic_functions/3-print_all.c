@@ -9,7 +9,7 @@ void print_all(const char * const format, ...)
 {
 	va_list ls;
 	int i = 0;
-	char *str, *sep = ", ";
+	char *str, *sep = "";
 
 	va_start(ls, format);
 	if (format != NULL)
@@ -34,6 +34,7 @@ void print_all(const char * const format, ...)
 					printf("%s%s", str, sep);
 					break;
 			}
+			sep = ", "
 			i++;
 		}
 	}
