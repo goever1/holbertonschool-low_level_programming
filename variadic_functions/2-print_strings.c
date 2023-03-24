@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include "variadic_functions.h"
 /**
- * print_string - print a string follow by a new line
+ * print_strings - print a string follow by a new line
  * @separator: string that separates the other string
  * @n: Amount of strings to print
  */
