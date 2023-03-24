@@ -32,6 +32,7 @@ void print_all(const char * const format, ...)
 				printf("%s%s", sep, str);
 				break;
 		}
+		sep = ", "
 		i++;
 	}
 	printf("\n");
