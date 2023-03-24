@@ -17,7 +17,7 @@ void print_all(const char * const format, ...)
 	while (format && format[i])
 	{
 		if (i == (n - 1))
-			sep ="";
+			sep = "";
 		switch (format[i])
 		{
 			case 'c':
@@ -28,7 +28,7 @@ void print_all(const char * const format, ...)
 				break;
 			case 'f':
 				printf("%f%s", va_arg(ls, double), sep);
-					break;
+				break;
 			case 's':
 				str = va_arg(ls, char *);
 				if (str == NULL)
