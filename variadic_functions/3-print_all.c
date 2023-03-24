@@ -32,7 +32,7 @@ void print_all(const char * const format, ...)
 				printf("%s%s", sep, str);
 				break;
 		}
-		sep = ", "
+		sep = ", ";
 		i++;
 	}
 	printf("\n");
