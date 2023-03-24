@@ -9,10 +9,10 @@ void print_all(const char * const format, ...)
 {
 	va_list ls;
 	int i = 0;
-	char *str, *sep = "";
+	char *str, *sep = ", ";
 
 	va_start(ls, format);
-	while (format[i])
+	while (format != NULL)
 	{
 		switch (format[i])
 		{
@@ -32,7 +32,6 @@ void print_all(const char * const format, ...)
 				printf("%s%s", sep, str);
 				break;
 		}
-		sep = ", ";
 		i++;
 	}
 	printf("\n");
