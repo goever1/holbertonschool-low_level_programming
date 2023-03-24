@@ -32,7 +32,7 @@ void print_all(const char * const format, ...)
 					if (str == NULL)
 						str = "(nil)";
 					printf("%s%s", sep, str);
-					sep = ", "
+					sep = ", ";
 					break;
 			}
 			i++;
