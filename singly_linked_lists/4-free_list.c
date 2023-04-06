@@ -5,9 +5,9 @@
  */
 void free_list(list_t *head)
 {
-	if (head->next)
+	if (head && head->next)
 		free(head->next);
-	if (head->str)
+	if (head && head->str)
 		free(head->str);
 	if (head)
 		free(head);
