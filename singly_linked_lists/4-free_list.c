@@ -5,10 +5,12 @@
  */
 void free_list(list_t *head)
 {
-	if (head && head->next)
-		free(head->next);
-	if (head && head->str)
-		free(head->str);
-	if (head)
+	list_t *temp;
+
+	while (head)
+	{
+		temp = head;
 		free(head);
+		head = temp->next;
+	}
 }
