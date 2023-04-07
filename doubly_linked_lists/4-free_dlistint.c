@@ -1,6 +1,6 @@
 #include "lists.h"
 /**
- * free_dlistint_t - frees a list
+ * free_dlistint - frees a list
  * @head: list to be freed
  */
 void free_dlistint(dlistint_t *head)
