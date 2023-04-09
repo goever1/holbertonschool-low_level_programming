@@ -1,18 +1,18 @@
 #include "main.h"
 /**
  * flip_bits - return the # of bits to been fliped
- * @n: #1
- * @m: #2
+ * @n: number
+ * @m: number to flip n to
  * Return: number of bits
  */
 unsigned int flip_bits(unsigned long int n, unsigned long int m)
 {
-	unsigned int nbits;
+	unsigned long int xor = n ^ m, bits = 0;
 
-	for (nbits = 0 || m; n >>= 1, m >>= 1;)
+	while (xor > 0)
 	{
-		if (( n & 1) != (m & 1))
-			nbits++;
+		bits += (xor & 1);
+		xor >>= 1;
 	}
-	return (nbits);
+	return (bits);
 }
