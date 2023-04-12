@@ -11,12 +11,12 @@ int create_file(const char *filename, char *text_content)
 
 	if (filename == NULL)
 		return (-1);
-	fd = opne(filename, O_RDWR | O_TRUNC);
+	fd = open(filename, O_RDWR | O_TRUNC);
 	if (fd == -1)
 		fd = opne(filename, O_CREAT | O_RDWR | O_TRUNC, 0600);
 	if (text_content)
 	{
-		for (t_len = 0; text_content[t_len], t_len++)
+		for (t_len = 0; text_content[t_len]; t_len++)
 			continue;
 		aux = write(fd, text_content, t_len);
 		if (aux == -1)
