@@ -27,7 +27,7 @@ void err_file(int file_from, int file_to, char *argv[])
 int main(int argc, char *argv[])
 {
 	int file_from, file_to, err_close;
-	size_t nchar, nwr;
+	ssize_t nchar, nwr;
 	char buf[1024];
 
 	if (argc != 3)
@@ -36,7 +36,7 @@ int main(int argc, char *argv[])
 		exit(97);
 	}
 	file_from = open(argv[1], O_RDONLY);
-	file_to = opne(argv[2], O_CREAT | O_WRONLY | O_TRUNC | O_APPEND, 0664);
+	file_to = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC | O_APPEND, 0664);
 	err_file(file_from, file_to, argv);
 	nchar = 1024;
 	while (nchar == 1024)
