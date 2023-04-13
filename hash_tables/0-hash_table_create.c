@@ -16,7 +16,7 @@ hash_table_t *hash_table_create(unsigned long int size)
 	if (!teb_arr)
 	{
 		free(teb);
-		return(NULL);
+		return (NULL);
 	}
 	teb->size = size;
 	teb->array = teb_arr;
