@@ -1,4 +1,4 @@
-#include "main.h"
+#include "hash_tables.h"
 /**
  * hash_table_set - add or update an elemnt in a hash table
  * @ht: hash table
